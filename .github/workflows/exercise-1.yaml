@@ -7,9 +7,13 @@ on:
           
 jobs: 
      learing: 
-          runs-on: ubuntu:latest
+          runs-on: ubuntu-latest
           steps: 
                - name: learing 
+<<<<<<< HEAD
                  run: "echo hello how are you"   
                - name: testing
                  run: printenv                 
+=======
+                 run: "echo hello how are you"                    
+>>>>>>> 7c2af5a66fa0367e3470f8e081c0321b0e9a035d
