@@ -1,13 +1,13 @@
----
-name: execrcise-4
-on: 
-  pull_request: 
-    branches:
-      - dev
+name: Run Every Minute
 
-jobs: 
-   execrcise4: 
-      runs-on: ubuntu-latest
-      steps: 
-          - name: message
-            run: "echo thanks for pull request"                     
+on:
+  schedule:
+    - cron: "* * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Running every minute 🚀"
