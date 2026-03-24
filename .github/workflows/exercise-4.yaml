@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs: 
-   execrcise4: 
+   execrcise-4: 
       runs-on: ubuntu-latest
       steps: 
           - name: message
