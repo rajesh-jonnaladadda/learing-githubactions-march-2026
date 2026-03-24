@@ -9,5 +9,5 @@ jobs:
   learing: 
     runs-on: ubuntu-latest
     steps: 
-      - name: pin test
+      - name: ping test
         run: pin -c 4 google.com                              
