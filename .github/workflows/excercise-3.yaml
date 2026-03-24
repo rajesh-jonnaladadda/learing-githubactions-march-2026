@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: ping test
-        run: pin -c 4 google.com                              
+        run: ping -c 4 google.com                              
