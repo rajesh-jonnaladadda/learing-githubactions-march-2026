@@ -1,0 +1,13 @@
+---
+name: reading
+on: 
+  push: 
+    branches: 
+      - main
+
+jobs: 
+  reading: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: reading 
+        run: cat Readme.md      
