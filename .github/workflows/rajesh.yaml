@@ -1,13 +1,15 @@
----
-name: reading
-on: 
-  push: 
-    branches: 
-      - main
+name: Fix File Error
 
-jobs: 
-  reading: 
+on:
+  push:
+
+jobs:
+  build:
     runs-on: ubuntu-latest
-    steps: 
-      - name: reading 
-        run: cat Readme.md      
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Read file
+        run: cat README.md
