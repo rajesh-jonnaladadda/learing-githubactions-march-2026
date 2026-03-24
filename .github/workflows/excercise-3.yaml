@@ -1,0 +1,13 @@
+---
+name: execrcise-3
+on: 
+  push: 
+    branches: 
+      - dev
+
+jobs: 
+  learing: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: pin test
+        run: pin -c 4 google.com                              
