@@ -1,0 +1,12 @@
+---
+on: 
+  push: 
+      branches: 
+          - main 
+ 
+jobs: 
+     learing: 
+          runs-on: ubuntu:latest
+          steps: 
+            - name: learing
+              run: "echo hello how are you"                         
